@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Default colors -->
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <!-- OriginOS Light Widget Palette -->
+    <color name="widget_window_bg">#F8FAFC</color>
+    <color name="widget_window_border">#E2E8F0</color>
+    <color name="widget_card_bg">#FFFFFF</color>
+    <color name="widget_card_border">#F1F5F9</color>
+    <color name="widget_text_primary">#0F172A</color>
+    <color name="widget_text_secondary">#475569</color>
+    <color name="widget_text_muted">#94A3B8</color>
+    <color name="widget_pill_secondary_bg">#EEF2F6</color>
+    <color name="widget_pill_secondary_text">#334155</color>
+    <color name="widget_pill_primary_bg">#4F46E5</color>
+    <color name="widget_pill_primary_text">#FFFFFF</color>
+    <color name="widget_success_pill_bg">#DCFCE7</color>
+    <color name="widget_success_pill_text">#166534</color>
+    <color name="widget_danger_pill_bg">#FEE2E2</color>
+    <color name="widget_danger_pill_text">#991B1B</color>
+    <color name="widget_warning_pill_bg">#FEF3C7</color>
+    <color name="widget_warning_pill_text">#92400E</color>
+    <color name="widget_btn_expense_bg">#FEE2E2</color>
+    <color name="widget_btn_expense_text">#B91C1C</color>
+    <color name="widget_btn_income_bg">#D1FAE5</color>
+    <color name="widget_btn_income_text">#047857</color>
+    <color name="widget_amount_expense">#DC2626</color>
+    <color name="widget_amount_income">#16A34A</color>
+    <color name="widget_amount_neutral">#4F46E5</color>
+    <color name="widget_streak_text">#B45309</color>
+    <color name="widget_warning">#D97706</color>
+    <color name="widget_divider">#E2E8F0</color>
+    <color name="widget_atomic_bg">#FFFFFF</color>
+    <color name="widget_atomic_border">#E2E8F0</color>
+    <color name="widget_atomic_border_glow_inner">#806366F1</color>
+    <color name="widget_atomic_border_glow_halo">#2E6366F1</color>
+    <color name="widget_atomic_border_bold">#CBD5E1</color>
+
+    <!-- Transparent Widgets Palette (OriginOS Glass & High Legibility) -->
+    <color name="widget_transparent_card_bg">#22000000</color>
+    <color name="widget_transparent_border">#38FFFFFF</color>
+    <color name="widget_transparent_border_glow_inner">#8CFFFFFF</color>
+    <color name="widget_transparent_border_glow_halo">#2AFFFFFF</color>
+    <color name="widget_transparent_border_bold">#78FFFFFF</color>
+    <color name="widget_transparent_surface">#2A000000</color>
+    <color name="widget_transparent_surface_border">#25FFFFFF</color>
+    <color name="widget_transparent_pill_bg">#35000000</color>
+    <color name="widget_transparent_text_primary">#FFFFFF</color>
+    <color name="widget_transparent_text_secondary">#E2E8F0</color>
+    <color name="widget_transparent_text_muted">#CBD5E1</color>
+
+    <!-- Dynamic Wallpaper Tint Fallbacks (API < 31; overridden by color-v31 Material You tokens) -->
+    <color name="widget_dynamic_atomic_bg">#F8FAFC</color>
+    <color name="widget_dynamic_atomic_border">#CBD5E1</color>
+    <color name="widget_dynamic_atomic_border_bold">#94A3B8</color>
+    <color name="widget_dynamic_atomic_border_glow_inner">#806366F1</color>
+    <color name="widget_dynamic_atomic_border_glow_halo">#2E6366F1</color>
+    <color name="widget_dynamic_transparent_card_bg">#2E1E293B</color>
+    <color name="widget_dynamic_transparent_border">#52FFFFFF</color>
+    <color name="widget_dynamic_transparent_border_bold">#8CFFFFFF</color>
+    <color name="widget_dynamic_transparent_border_glow_inner">#99A5B4FC</color>
+    <color name="widget_dynamic_transparent_border_glow_halo">#38818CF8</color>
+    <color name="widget_dynamic_pill_primary_bg">#4F46E5</color>
+    <color name="widget_dynamic_pill_primary_text">#FFFFFF</color>
+    <color name="widget_dynamic_pill_secondary_bg">#E2E8F0</color>
+    <color name="widget_dynamic_pill_secondary_text">#1E293B</color>
+    <color name="widget_dynamic_transparent_pill_bg">#440F172A</color>
+    <color name="widget_dynamic_accent_text">#4F46E5</color>
+    <color name="widget_dynamic_transparent_primary_text">#C7D2FE</color>
+</resources>

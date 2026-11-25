@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Vivo OriginOS Minimal Atomic Widget (2x1) with Dark Mode Support -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/widget_minimal_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent"
+    android:clipChildren="false"
+    android:clipToPadding="false"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:padding="0dp">
+
+    <!-- Atomic Card Container: 26dp corner radius, clipToOutline, 14dp horizontal / 10dp vertical padding -->
+    <LinearLayout
+        android:id="@+id/widget_minimal_card"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@drawable/widget_atomic_card_bg"
+        android:clipToOutline="true"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingStart="14dp"
+        android:paddingTop="10dp"
+        android:paddingEnd="14dp"
+        android:paddingBottom="10dp">
+
+        <!-- Net Balance Column -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:text="Net Balance"
+                android:textColor="@color/widget_text_secondary"
+                android:textSize="11sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/widget_minimal_balance"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/sf_mono"
+                android:singleLine="true"
+                android:text="₹0.00"
+                android:textColor="@color/widget_amount_income"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <!-- Divider -->
+        <ImageView
+            android:layout_width="1.5dp"
+            android:layout_height="28dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:background="@color/widget_divider"
+            android:contentDescription="@null" />
+
+        <!-- Today's Spend Column -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:text="Today's Spend"
+                android:textColor="@color/widget_text_secondary"
+                android:textSize="11sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/widget_minimal_today"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/sf_mono"
+                android:singleLine="true"
+                android:text="₹0.00"
+                android:textColor="@color/widget_amount_expense"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <!-- Quick Add Button (Pill) -->
+        <TextView
+            android:id="@+id/widget_minimal_add_btn"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="8dp"
+            android:background="@drawable/widget_pixel_pill_primary"
+            android:gravity="center"
+            android:text="+"
+            android:textColor="@color/widget_pill_primary_text"
+            android:textSize="17sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <!-- OriginOS Footer Label: 28dp slot, -2.5dp optical lift -> 11.5dp below card bottom -->
+    <TextView
+        android:id="@+id/widget_minimal_atomic_label"
+        android:layout_width="wrap_content"
+        android:layout_height="28dp"
+        android:fontFamily="sans-serif-medium"
+        android:gravity="center"
+        android:includeFontPadding="false"
+        android:letterSpacing="0.015"
+        android:lineHeight="16.52sp"
+        android:paddingTop="0dp"
+        android:paddingBottom="0dp"
+        android:shadowColor="#8C000000"
+        android:shadowDx="0"
+        android:shadowDy="1.0"
+        android:shadowRadius="2.0"
+        android:singleLine="true"
+        android:text="Overview"
+        android:textColor="#FFFFFF"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:translationY="-2.5dp"
+        tools:targetApi="p" />
+
+</LinearLayout>

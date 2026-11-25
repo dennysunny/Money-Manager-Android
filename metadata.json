@@ -1,0 +1,6 @@
+{
+  "name": "Money Manager",
+  "description": "Daily expense and income tracker with categories, budgets, calendar view, recurring EMI, analytics, and Google Drive backup.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

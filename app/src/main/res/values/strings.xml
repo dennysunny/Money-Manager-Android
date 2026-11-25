@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">Money Manager</string>
+    <string name="widget_desc_habit">Track daily spending and saving habits on your home screen</string>
+    <string name="widget_desc_velocity">Track daily spend velocity and monthly burn rate pace</string>
+    <string name="widget_desc_spending_habits">View 50/30/20 spending habits breakdown and top categories</string>
+    <string name="widget_desc_summary">Quick view of monthly expenses, net balance, and spending breakdown</string>
+    <string name="widget_wallpaper_tint_title">Dynamic Wallpaper Tinting</string>
+    <string name="widget_wallpaper_tint_subtitle">Adapt app colors and widget primary text &amp; buttons when your wallpaper changes</string>
+    <string name="widget_wallpaper_tint_enabled_toast">Dynamic wallpaper tinting enabled</string>
+    <string name="widget_wallpaper_tint_disabled_toast">Dynamic wallpaper tinting disabled</string>
+    <string name="widget_wallpaper_tint_live_badge">Adapts live on wallpaper change</string>
+    <string name="wallpaper_tint_apply_app_title">Apply to App</string>
+    <string name="wallpaper_tint_apply_app_subtitle">Tint app buttons, tabs &amp; accents with wallpaper colors</string>
+    <string name="wallpaper_tint_apply_widgets_title">Apply to Widgets</string>
+    <string name="wallpaper_tint_apply_widgets_subtitle">Tint widget primary text &amp; buttons while keeping solid or transparent backgrounds</string>
+    <string name="widget_border_toggle_title">Show Widget Border</string>
+    <string name="widget_border_toggle_subtitle">Display an outline or glow around home screen widget cards</string>
+    <string name="widget_border_enabled_toast">Widget border enabled</string>
+    <string name="widget_border_disabled_toast">Widget border disabled</string>
+    <string name="widget_background_toggle_title">Transparent Widget Background</string>
+    <string name="widget_background_toggle_subtitle_transparent">Currently Transparent Glass — turn off for Solid card background</string>
+    <string name="widget_background_toggle_subtitle_solid">Currently Solid Card — turn on for Transparent Glass background</string>
+    <string name="widget_background_transparent_toast">Widgets switched to Transparent background</string>
+    <string name="widget_background_solid_toast">Widgets switched to Solid background</string>
+</resources>

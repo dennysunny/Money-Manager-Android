@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Vivo OriginOS Quick Add Capsule Atomic Widget (1x4) with Dark Mode Support -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/widget_1x4_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent"
+    android:clipChildren="false"
+    android:clipToPadding="false"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:padding="0dp">
+
+    <!-- Atomic Card Container: 26dp corner radius, clipToOutline, 14dp horizontal / 10dp vertical padding -->
+    <LinearLayout
+        android:id="@+id/widget_1x4_card"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@drawable/widget_atomic_card_bg"
+        android:clipToOutline="true"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingStart="14dp"
+        android:paddingTop="10dp"
+        android:paddingEnd="14dp"
+        android:paddingBottom="10dp">
+
+        <TextView
+            android:id="@+id/btn_add_expense"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="6dp"
+            android:layout_weight="1"
+            android:background="@drawable/widget_btn_expense_bg"
+            android:gravity="center"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            android:text="- Expense"
+            android:textColor="@color/widget_btn_expense_text"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/btn_add_income"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="6dp"
+            android:layout_weight="1"
+            android:background="@drawable/widget_btn_income_bg"
+            android:gravity="center"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            android:text="+ Income"
+            android:textColor="@color/widget_btn_income_text"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <!-- OriginOS Footer Label: 28dp slot, -2.5dp optical lift -> 11.5dp below card bottom -->
+    <TextView
+        android:id="@+id/widget_1x4_atomic_label"
+        android:layout_width="wrap_content"
+        android:layout_height="28dp"
+        android:fontFamily="sans-serif-medium"
+        android:gravity="center"
+        android:includeFontPadding="false"
+        android:letterSpacing="0.015"
+        android:lineHeight="16.52sp"
+        android:paddingTop="0dp"
+        android:paddingBottom="0dp"
+        android:shadowColor="#8C000000"
+        android:shadowDx="0"
+        android:shadowDy="1.0"
+        android:shadowRadius="2.0"
+        android:singleLine="true"
+        android:text="Quick Add"
+        android:textColor="#FFFFFF"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:translationY="-2.5dp"
+        tools:targetApi="p" />
+
+</LinearLayout>

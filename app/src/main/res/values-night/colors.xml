@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- OriginOS Dark / AMOLED Night Widget Palette for Vivo X300 -->
+    <color name="widget_window_bg">#121316</color>
+    <color name="widget_window_border">#282A2F</color>
+    <color name="widget_card_bg">#1B1D22</color>
+    <color name="widget_card_border">#2A2D34</color>
+    <color name="widget_text_primary">#F8FAFC</color>
+    <color name="widget_text_secondary">#94A3B8</color>
+    <color name="widget_text_muted">#64748B</color>
+    <color name="widget_pill_secondary_bg">#303136</color>
+    <color name="widget_pill_secondary_text">#CBD5E1</color>
+    <color name="widget_pill_primary_bg">#6366F1</color>
+    <color name="widget_pill_primary_text">#FFFFFF</color>
+    <color name="widget_success_pill_bg">#0E3826</color>
+    <color name="widget_success_pill_text">#4ADE80</color>
+    <color name="widget_danger_pill_bg">#3D1418</color>
+    <color name="widget_danger_pill_text">#F87171</color>
+    <color name="widget_warning_pill_bg">#3B2609</color>
+    <color name="widget_warning_pill_text">#FBBF24</color>
+    <color name="widget_btn_expense_bg">#331619</color>
+    <color name="widget_btn_expense_text">#F87171</color>
+    <color name="widget_btn_income_bg">#112F23</color>
+    <color name="widget_btn_income_text">#4ADE80</color>
+    <color name="widget_amount_expense">#F87171</color>
+    <color name="widget_amount_income">#4ADE80</color>
+    <color name="widget_amount_neutral">#818CF8</color>
+    <color name="widget_streak_text">#FBBF24</color>
+    <color name="widget_warning">#FBBF24</color>
+    <color name="widget_divider">#323338</color>
+    <color name="widget_atomic_bg">#242426</color>
+    <color name="widget_atomic_border">#323336</color>
+    <color name="widget_atomic_border_glow_inner">#99818CF8</color>
+    <color name="widget_atomic_border_glow_halo">#33818CF8</color>
+    <color name="widget_atomic_border_bold">#48494D</color>
+
+    <!-- Transparent Widgets Palette (OriginOS Glass & High Legibility) -->
+    <color name="widget_transparent_card_bg">#2D000000</color>
+    <color name="widget_transparent_border">#3DFFFFFF</color>
+    <color name="widget_transparent_border_glow_inner">#99FFFFFF</color>
+    <color name="widget_transparent_border_glow_halo">#30FFFFFF</color>
+    <color name="widget_transparent_border_bold">#80FFFFFF</color>
+    <color name="widget_transparent_surface">#35000000</color>
+    <color name="widget_transparent_surface_border">#2BFFFFFF</color>
+    <color name="widget_transparent_pill_bg">#40000000</color>
+    <color name="widget_transparent_text_primary">#FFFFFF</color>
+    <color name="widget_transparent_text_secondary">#E2E8F0</color>
+    <color name="widget_transparent_text_muted">#CBD5E1</color>
+
+    <!-- Dynamic Wallpaper Tint Fallbacks (API < 31; overridden by color-night-v31 Material You tokens) -->
+    <color name="widget_dynamic_atomic_bg">#242426</color>
+    <color name="widget_dynamic_atomic_border">#475569</color>
+    <color name="widget_dynamic_atomic_border_bold">#64748B</color>
+    <color name="widget_dynamic_atomic_border_glow_inner">#99818CF8</color>
+    <color name="widget_dynamic_atomic_border_glow_halo">#33818CF8</color>
+    <color name="widget_dynamic_transparent_card_bg">#3D0F172A</color>
+    <color name="widget_dynamic_transparent_border">#52CBD5E1</color>
+    <color name="widget_dynamic_transparent_border_bold">#8CE2E8F0</color>
+    <color name="widget_dynamic_transparent_border_glow_inner">#99818CF8</color>
+    <color name="widget_dynamic_transparent_border_glow_halo">#386366F1</color>
+    <color name="widget_dynamic_pill_primary_bg">#818CF8</color>
+    <color name="widget_dynamic_pill_primary_text">#0F172A</color>
+    <color name="widget_dynamic_pill_secondary_bg">#2D3348</color>
+    <color name="widget_dynamic_pill_secondary_text">#E2E8F0</color>
+    <color name="widget_dynamic_transparent_pill_bg">#4D0F172A</color>
+    <color name="widget_dynamic_accent_text">#A5B4FC</color>
+    <color name="widget_dynamic_transparent_primary_text">#C7D2FE</color>
+</resources>

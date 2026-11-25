@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Vivo OriginOS Budget Progress Atomic Widget (4x2) with Dark Mode Support -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/widget_budget_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent"
+    android:clipChildren="false"
+    android:clipToPadding="false"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:padding="0dp">
+
+    <!-- Atomic Card Container: 26dp corner radius, clipToOutline, 14dp default inner padding -->
+    <LinearLayout
+        android:id="@+id/widget_budget_card"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@drawable/widget_atomic_card_bg"
+        android:clipToOutline="true"
+        android:orientation="vertical"
+        android:padding="14dp">
+
+        <!-- Header: Title and Quick Add -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/widget_budget_title"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:singleLine="true"
+                android:text="MONTHLY BUDGET"
+                android:textColor="@color/widget_text_secondary"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/widget_budget_add_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/widget_pixel_pill_primary"
+                android:paddingStart="10dp"
+                android:paddingTop="4dp"
+                android:paddingEnd="10dp"
+                android:paddingBottom="4dp"
+                android:text="+ Expense"
+                android:textColor="@color/widget_pill_primary_text"
+                android:textSize="11sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <!-- Center Content: Progress Ring & Budget Metrics Directly on Card -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/widget_budget_chart"
+                android:layout_width="68dp"
+                android:layout_height="68dp"
+                android:layout_marginEnd="12dp"
+                android:contentDescription="Budget Progress Ring" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="4dp"
+                        android:text="Spent:"
+                        android:textColor="@color/widget_text_secondary"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/widget_budget_spent"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/sf_mono"
+                        android:gravity="end"
+                        android:singleLine="true"
+                        android:text="₹0"
+                        android:textColor="@color/widget_amount_expense"
+                        android:textSize="13sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="4dp"
+                        android:text="Limit:"
+                        android:textColor="@color/widget_text_secondary"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/widget_budget_limit"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/sf_mono"
+                        android:gravity="end"
+                        android:singleLine="true"
+                        android:text="₹0"
+                        android:textColor="@color/widget_text_primary"
+                        android:textSize="13sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="4dp"
+                        android:text="Remaining:"
+                        android:textColor="@color/widget_text_secondary"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/widget_budget_remaining"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/sf_mono"
+                        android:gravity="end"
+                        android:singleLine="true"
+                        android:text="₹0"
+                        android:textColor="@color/widget_amount_income"
+                        android:textSize="13sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/widget_budget_pct"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:background="@drawable/widget_pixel_pill_secondary"
+                    android:paddingStart="8dp"
+                    android:paddingTop="3dp"
+                    android:paddingEnd="8dp"
+                    android:paddingBottom="3dp"
+                    android:text="0% Used"
+                    android:textColor="@color/widget_amount_neutral"
+                    android:textSize="11sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- OriginOS Footer Label: 28dp slot, -2.5dp optical lift -> 11.5dp below card bottom -->
+    <TextView
+        android:id="@+id/widget_budget_atomic_label"
+        android:layout_width="wrap_content"
+        android:layout_height="28dp"
+        android:fontFamily="sans-serif-medium"
+        android:gravity="center"
+        android:includeFontPadding="false"
+        android:letterSpacing="0.015"
+        android:lineHeight="16.52sp"
+        android:paddingTop="0dp"
+        android:paddingBottom="0dp"
+        android:shadowColor="#8C000000"
+        android:shadowDx="0"
+        android:shadowDy="1.0"
+        android:shadowRadius="2.0"
+        android:singleLine="true"
+        android:text="Monthly Budget"
+        android:textColor="#FFFFFF"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:translationY="-2.5dp"
+        tools:targetApi="p" />
+
+</LinearLayout>

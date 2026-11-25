@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Vivo OriginOS Atomic Card Background: Glow Border (2dp inner stroke + 4dp soft outer halo, 26dp radius) -->
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- 4dp soft outer halo -->
+    <item>
+        <shape android:shape="rectangle">
+            <corners android:radius="26dp" />
+            <solid android:color="@android:color/transparent" />
+            <stroke
+                android:width="4dp"
+                android:color="@color/widget_atomic_border_glow_halo" />
+        </shape>
+    </item>
+    <!-- Main card surface with 2dp inner stroke -->
+    <item
+        android:bottom="2dp"
+        android:left="2dp"
+        android:right="2dp"
+        android:top="2dp">
+        <shape android:shape="rectangle">
+            <corners android:radius="26dp" />
+            <solid android:color="@color/widget_atomic_bg" />
+            <stroke
+                android:width="2dp"
+                android:color="@color/widget_atomic_border_glow_inner" />
+        </shape>
+    </item>
+</layer-list>
